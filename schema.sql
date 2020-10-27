@@ -6,28 +6,28 @@ CREATE DATABASE employee_tracker_db;
 USE employee_tracker_db;
 
 CREATE TABLE department (
-  id INT NOT NULL AUTO_INCREMENT,
-  PRIMARY KEY (id)
+  id INTEGER NOT NULL AUTO_INCREMENT,
   name VARCHAR(30),
-
+  PRIMARY KEY (id)
 );
 
 CREATE TABLE role (
   id INT NOT NULL AUTO_INCREMENT,
-  PRIMARY KEY (id),
   title VARCHAR(30),
   salary DEC,
   department_id INT,
-
+  PRIMARY KEY (id)
 );
 
 CREATE TABLE employee (
   id INT NOT NULL AUTO_INCREMENT,
-  PRIMARY KEY (id),
   first_name VARCHAR(30),
   last_name VARCHAR(30),
   role_id INT,
   manager_id INT,
+  PRIMARY KEY (id)
 
 );
 
+INSERT INTO department (name)
+VALUES ("Manager");
