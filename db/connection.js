@@ -1,5 +1,9 @@
 const mysql = require("mysql");
 const express = require("express");
+const inquirer = require("inquirer");
+require("console.table");
+
+const util = require("util");
 
 const app = express();
 
@@ -12,7 +16,6 @@ app.use(express.json());
 
 const connection = mysql.createConnection({
     host: "localhost",
-    port: 3306,
     user: "root",
     password: "Skylar-10",
     database: "employee_tracker_db",
@@ -28,9 +31,6 @@ const connection = mysql.createConnection({
     console.log("connected as id " + connection.threadId);
   });
 
-  app.listen(PORT, function() {
-    // Log (server-side) when our server has started
-    console.log("Server listening on: http://localhost:" + PORT);
-  });
+  connection.query = util.promisify(connection.query)
 
-  console.table(connection.tables);
+  module.exports = connection
