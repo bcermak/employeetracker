@@ -11,4 +11,4 @@ const connection = require("./connection");
 
 }
 
-module.exports = newDB(connection);
+// module.exports = newDB(connection);
