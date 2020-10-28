@@ -79,5 +79,54 @@ async function loadMainPrompts() {
          ]  
 
     }])
-};
+
+    if(choice == "VIEW_EMPLOYEES") {
+        console.log("display ALL")
+        }
+
+    if(choice == "VIEW_EMPLOYEES_BY_DEPARTMENT") {
+            console.log("display by DEPT")
+            }
+    if(choice == "VIEW_EMPLOYEES_BY_MANAGER") {
+            console.log("display by MANAGER")
+            }
+    if(choice == "ADD_EMPLOYEE") {
+            console.log("ADD NEW")
+            }
+    if(choice == "REMOVE_EMPLOYEE") {
+            console.log("remove EMPLOYEE")
+            }
+    if(choice == "UPDATE_EMPLOYEE_ROLE") {
+            console.log("update ROLE")
+            }
+    if(choice == "UPDATE_EMPLOYEE_MANAGER") {
+            console.log("update MANAGER")
+            }
+    if(choice == "VIEW_ALL_ROLES") {
+            console.log("display ALL ROLES")
+            }
+    if(choice == "ADD_ROLE") {
+            console.log("add NEW ROLE")
+            }
+    if(choice == "REMOVE_ROLE") {
+            console.log("remove ROLE")
+            }
+    if(choice == "VIEW_ALL_DEPARTMENTS") {
+            console.log("display ALL DEPARTMENTS")
+            }
+    if(choice == "ADD_DEPARTMENT") {
+            console.log("add NEW DEPARTMENT")
+            }
+    if(choice == "REMOVE_DEPARTMENT") {
+            console.log("delete DEPARTMENT")
+            }         
+    if(choice == "QUIT") {
+            console.log("EXIT APPLICATION")
+    }   
+        
+}
+
+
+
+
 
