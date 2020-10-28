@@ -18,3 +18,5 @@ Users need an application that can navigate current employees, departments, and 
 GitHub Repository: https://github.com/bcermak/employeetracker
 
 Video Demo: https://drive.google.com/file/d/1VT7l9yT8GbY3xITha6XmofAzI0fZa7Vj/view
+
+<img src = "assets\firstprompt.JPG" alt = "firstprompt">
